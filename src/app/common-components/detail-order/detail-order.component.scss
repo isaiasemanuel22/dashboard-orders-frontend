@@ -1,0 +1,53 @@
+.body-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .table {
+        width: 100%;
+        .desktop {
+            width: 100%;
+            tr {
+                width: 100%;
+                padding: 10px 0px 10px 0;
+                margin-bottom: 5px;
+                background-color: rgb(223, 223, 223);
+                border-radius: 10px;
+                th,
+                td {
+                    padding: 5px;
+                    text-align: center;
+                }
+                th {
+                    font-weight: normal;
+                }
+                td {
+                    font-weight: bold;
+                }
+            }
+        }
+        .mobile {
+            width: 100%;
+            tr {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0px 10px 0;
+                margin-bottom: 5px;
+                background-color: rgb(223, 223, 223);
+                border-radius: 10px;
+                th,
+                td {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                th {
+                    font-weight: normal;
+                }
+                td {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
