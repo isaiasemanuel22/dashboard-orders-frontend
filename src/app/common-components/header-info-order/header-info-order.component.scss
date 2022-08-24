@@ -1,0 +1,63 @@
+.header-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 40px;
+    box-sizing: border-box;
+    .title-card {
+        padding: 5px;
+        display: flex;
+        flex-flow: column;
+        .title {
+            margin-bottom: 5px;
+            p {
+                color: rgb(36, 39, 37);
+                margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .dates {
+            p {
+                margin: 0;
+                font-size: 14px;
+                color: rgb(80, 74, 74);
+            }
+        }
+    }
+    .status {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+        .cancelled {
+            width: 100%;
+            padding: 8px;
+            background-color: rgb(252, 224, 224);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin: 0;
+                font-size: 17px;
+                font-weight: bold;
+                color: rgb(255, 32, 32);
+            }
+        }
+    }
+    .button-detail {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #aaa;*/
+        position: absolute;
+        right: 0px;
+        font-size: 25px;
+    }
+}

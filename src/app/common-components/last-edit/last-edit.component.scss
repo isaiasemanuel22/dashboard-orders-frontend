@@ -1,0 +1,14 @@
+@import url('../item-table/item-table.component.scss');
+.toolheader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    p {
+        margin: 0;
+        font-size: 15px;
+        color: rgb(122, 122, 122);
+    }
+}

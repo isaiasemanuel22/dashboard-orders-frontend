@@ -1,0 +1,28 @@
+<div class="body-card">
+    <div class="table">
+        <table class="mobile" *ngIf="mobile; else desktop">
+            <tr>
+                <th>Cliente</th>
+                <td>Carmen</td>
+            </tr>
+            <tr>
+                <th>Pago</th>
+                <td>Completo</td>
+            </tr>
+        </table>
+
+        <ng-template #desktop>
+            <table class="desktop">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Pago</th>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>Completo</td>
+                </tr>
+            </table>
+
+        </ng-template>
+    </div>
+</div>
