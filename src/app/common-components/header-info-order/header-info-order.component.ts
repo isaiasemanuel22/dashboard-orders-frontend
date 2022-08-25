@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faAngleRight, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'header-info',
+  selector: 'do-header-info',
   templateUrl: './header-info-order.component.html',
   styleUrls: ['./header-info-order.component.scss']
 })
