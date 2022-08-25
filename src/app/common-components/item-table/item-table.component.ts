@@ -3,7 +3,7 @@ import { faArrowRight, faCoffee , faAngleRight} from '@fortawesome/free-solid-sv
 
 
 @Component({
-  selector: 'item-table',
+  selector: 'do-item-table',
   templateUrl: './item-table.component.html',
   styleUrls: ['./item-table.component.scss']
 })

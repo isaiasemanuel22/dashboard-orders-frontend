@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'detail-order',
+  selector: 'do-detail-order',
   templateUrl: './detail-order.component.html',
   styleUrls: ['./detail-order.component.scss']
 })
