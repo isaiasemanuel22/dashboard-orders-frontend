@@ -1,1 +1,17 @@
-<p>status works!</p>
+<div class="status">
+    <ng-container [ngSwitch]="status_value">
+        <div class="process" *ngSwitchCase="'process'">
+            <p>Proceso</p>
+        </div>
+        <div class="accepted" *ngSwitchCase="'accepted'">
+            <p>Aceptado</p>
+        </div>
+        <div class="cancelled" *ngSwitchCase="'cancelled'">
+            <p>Cancelado</p>
+        </div>
+        <div class="toDo" *ngSwitchDefault>
+            <p>Por Hacer</p>
+        </div>
+    </ng-container>
+
+</div>

@@ -8,13 +8,14 @@ import { HeaderInfoOrderComponent } from './header-info-order/header-info-order.
 import { LastEditComponent } from './last-edit/last-edit.component';
 
 
+
 @NgModule({
   declarations: [
     ItemTableComponent,
     StatusComponent,
     DetailOrderComponent,
     HeaderInfoOrderComponent,
-    LastEditComponent
+    LastEditComponent,
   ],
   imports: [
     CommonModule,
