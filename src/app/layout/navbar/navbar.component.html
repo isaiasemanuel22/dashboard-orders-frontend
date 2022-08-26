@@ -1,9 +1,5 @@
 <div class="navbar">
-    <do-button-nav class="navButton">
-
+    <do-button-nav class="navButton" *ngFor="let nav of navigation">
+        <fa-icon [icon]="nav.icon"></fa-icon>
     </do-button-nav>
-    <do-button-nav class="navButton">
-        <fa-icon [icon]="iconHouse"></fa-icon>
-    </do-button-nav>
-    <do-button-nav class="navButton"></do-button-nav>
 </div>

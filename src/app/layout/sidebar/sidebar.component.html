@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <div class="content-buttons" *ngFor="let nav of navigation">
+        <do-button-nav class="navButton" [title]="nav.name">
+            <fa-icon [icon]="nav.icon"></fa-icon>
+        </do-button-nav>
+    </div>
+
+</div>

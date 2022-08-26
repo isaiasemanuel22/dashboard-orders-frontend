@@ -6,6 +6,7 @@ import { StatusComponent } from './status/status.component';
 import { DetailOrderComponent } from './detail-order/detail-order.component';
 import { HeaderInfoOrderComponent } from './header-info-order/header-info-order.component';
 import { LastEditComponent } from './last-edit/last-edit.component';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -16,13 +17,15 @@ import { LastEditComponent } from './last-edit/last-edit.component';
     DetailOrderComponent,
     HeaderInfoOrderComponent,
     LastEditComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
     FontAwesomeModule
   ],
   exports: [
-    ItemTableComponent
+    ItemTableComponent,
+    CardComponent,
   ]
 })
 export class CommonComponentsModule { }

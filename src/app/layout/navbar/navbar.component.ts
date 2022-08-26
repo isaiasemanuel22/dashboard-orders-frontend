@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { routerNav } from 'src/app/resoruces/menu-router.service';
 
 @Component({
   selector: 'do-navbar',
@@ -8,9 +9,8 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
 
+  navigation = routerNav;
 
-
-  iconHouse = faHouse
   constructor() { }
 
   ngOnInit(): void {

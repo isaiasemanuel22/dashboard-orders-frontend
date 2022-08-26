@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonsModule } from '../buttons/buttons.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -12,7 +13,8 @@ import { ButtonsModule } from '../buttons/buttons.module';
   declarations: [
     ContentComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { ButtonsModule } from '../buttons/buttons.module';
   exports: [
     ContentComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ]
 })
 export class LayoutModule { }

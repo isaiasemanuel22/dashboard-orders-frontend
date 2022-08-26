@@ -1,10 +1,50 @@
 .content-main {
     width: 100%;
-    padding: 10px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    overflow-y: scroll;
-     :host {
+    height: 100vh;
+    padding-top: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgb(89, 199, 226);
+    do-sidebar {
+        width: 250px;
+        height: 100%;
+    }
+    .content-router {
+        padding: 10px;
+        height: 100%;
+        overflow-y: scroll;
         width: 100%;
+        box-sizing: border-box;
+         :host {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-main {
+        width: 100%;
+        padding: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow-y: scroll;
+        overflow: hidden;
+        do-sidebar {
+            display: none;
+        }
+        .content-router {
+            border-radius: 20px;
+            padding: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            height: 100%;
+            overflow-y: scroll;
+            width: 100%;
+            box-sizing: border-box;
+             :host {
+                width: 100%;
+            }
+        }
     }
 }
