@@ -7,6 +7,7 @@ import { CommonComponentsModule } from './common-components/common-components.mo
 import { HomeComponent } from './views/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutModule } from './layout/layout.module';
+import { ButtonsModule } from './buttons/buttons.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LayoutModule } from './layout/layout.module';
     AppRoutingModule,
     CommonComponentsModule,
     FontAwesomeModule,
-    LayoutModule
+    LayoutModule,
+    ButtonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

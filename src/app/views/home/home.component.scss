@@ -1,10 +1,28 @@
-.list-table {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    gap: 20px;
-    .item {
+@media screen and (max-width: 768px) {
+    .list-table {
         width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        gap: 20px;
+        .item {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        width: 100%;
+        .list-table {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .item {
+                width: 32%;
+                min-width: 350px;
+            }
+        }
     }
 }

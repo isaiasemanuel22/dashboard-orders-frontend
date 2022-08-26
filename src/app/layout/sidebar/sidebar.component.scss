@@ -1,0 +1,14 @@
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: rgb(89, 199, 226);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-flow: column;
+    .content-buttons {
+        width: 100%;
+    }
+}

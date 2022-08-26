@@ -5,17 +5,27 @@
     .table {
         width: 100%;
         .desktop {
-            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
             tr {
-                width: 100%;
                 padding: 10px 0px 10px 0;
                 margin-bottom: 5px;
                 background-color: rgb(223, 223, 223);
                 border-radius: 10px;
                 th,
                 td {
-                    padding: 5px;
+                    width: 300px;
+                    padding: 10px;
                     text-align: center;
+                    border-left: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                }
+                 :first-child {
+                    border-left: 0px solid #000;
+                }
+                 :last-child {
+                    border-right: 0px solid #000;
                 }
                 th {
                     font-weight: normal;
