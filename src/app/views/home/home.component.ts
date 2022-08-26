@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { OrdersService} from '../../resources/orders.service'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private OrdersService: OrdersService) { }
 
   ngOnInit(): void {
+    this.OrdersService.getOrders();
   }
 
 }

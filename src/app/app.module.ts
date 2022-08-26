@@ -8,6 +8,8 @@ import { HomeComponent } from './views/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutModule } from './layout/layout.module';
 import { ButtonsModule } from './buttons/buttons.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { OrdersService } from './resources/orders.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { ButtonsModule } from './buttons/buttons.module';
     CommonComponentsModule,
     FontAwesomeModule,
     LayoutModule,
-    ButtonsModule
+    ButtonsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [OrdersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
