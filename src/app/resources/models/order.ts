@@ -12,7 +12,7 @@ export class Order {
     reserve:boolean = false;
     amountReserve?:number;
     cost?: number;
-
+    numberOrder!:number;
     constructor(){
     }
 }
