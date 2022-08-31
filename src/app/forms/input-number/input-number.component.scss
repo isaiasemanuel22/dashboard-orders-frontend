@@ -1,0 +1,21 @@
+.form-number {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .input-number {
+        width: 100px;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}

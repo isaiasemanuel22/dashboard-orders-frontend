@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http'; 
-const getOrders = environment.urlback;
-const pushOrder = environment.urlback;
-const putOrder = environment.urlback;
-const deleteOrder = environment.urlback;
+import { Order } from './models/order';
+const getOrders = environment.urlback + 'orders/';
+const pushOrder = environment.urlback + 'orders/';
+const putOrder = environment.urlback + 'orders/';
+const deleteOrder = environment.urlback + 'orders/';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,16 +14,12 @@ export class OrdersService {
   constructor(private http: HttpClient) { 
   }
 
-
   getOrders(): Promise<any> {
-    let orders: any[] = [];
-    return new Promise((resolve, reject) => {
-      this.http.get(getOrders).toPromise().then(
-        res => {
-          console.log(res);
-        }
-      )
-    })
+    return this.http.get(getOrders).toPromise()
+  }
+
+  addOrder(order:Order): Promise<any> {
+    return this.http.post(pushOrder , order).toPromise();
   }
 
 }

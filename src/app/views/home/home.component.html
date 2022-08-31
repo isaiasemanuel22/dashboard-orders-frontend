@@ -1,10 +1,6 @@
 <div class="home">
     <div class="list-table">
-        <do-add-card class="item"></do-add-card>
-        <do-item-table class="item"></do-item-table>
-        <do-item-table class="item"></do-item-table>
-        <do-item-table class="item"></do-item-table>
-        <do-item-table class="item"></do-item-table>
-        <do-item-table class="item"></do-item-table>
+        <do-add-card class="item" (click)="addOrder()"></do-add-card>
+        <do-item-table *ngFor="let item of orders" [order]="item" class="item"></do-item-table>
     </div>
 </div>

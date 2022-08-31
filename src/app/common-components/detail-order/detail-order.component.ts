@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Order } from 'src/app/resources/models/order';
 
 @Component({
   selector: 'do-detail-order',
@@ -7,12 +8,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class DetailOrderComponent implements OnInit {
 
-  mobile = window.innerWidth  <= 768;
+
+
+  @Input() set order(order:Order) {
+    this.orderInput = order;
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event:any) {
     this.mobile = event.target.innerWidth  <= 768;
   }
+  
+  mobile = window.innerWidth  <= 768;
+  orderInput!:Order;
   constructor() { }
 
   ngOnInit(): void {

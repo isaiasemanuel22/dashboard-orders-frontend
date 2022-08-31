@@ -1,5 +1,5 @@
 <do-card>
-    <do-last-edit></do-last-edit>
-    <do-header-info></do-header-info>
-    <do-detail-order></do-detail-order>
+    <do-last-edit [date]="orderInput.lastUpdate"></do-last-edit>
+    <do-header-info [order]="orderInput"></do-header-info>
+    <do-detail-order [order]="orderInput"></do-detail-order>
 </do-card>
