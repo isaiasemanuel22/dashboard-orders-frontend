@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { routerNav } from 'src/app/resoruces/menu-router.service';
 
@@ -11,9 +12,13 @@ export class NavbarComponent implements OnInit {
 
   navigation = routerNav;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+
+  navigate(path:string){
+    this.router.navigate([path]);
+  }
 }

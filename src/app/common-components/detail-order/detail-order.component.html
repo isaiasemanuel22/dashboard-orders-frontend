@@ -1,25 +1,32 @@
 <div class="body-card">
     <div class="table">
         <table class="mobile" *ngIf="mobile; else desktop">
-            <tr>
+            <tr *ngIf="orderInput.client != null">
                 <th>Cliente</th>
-                <td>Carmen</td>
+                <td>{{ orderInput.client }}</td>
             </tr>
-            <tr>
-                <th>Pago</th>
-                <td>Completo</td>
+            <tr *ngIf="orderInput.reserve">
+                <th>Reserva</th>
+                <td>${{ orderInput.amountReserve }}</td>
             </tr>
+            <tr *ngIf=" orderInput.cost != undefined && orderInput.cost > 0">
+                <th>Costo</th>
+                <td>${{ orderInput.cost }}</td>
+            </tr>
+
         </table>
 
         <ng-template #desktop>
             <table class="desktop">
                 <tr>
-                    <th>Cliente</th>
-                    <th>Pago</th>
+                    <th *ngIf="orderInput.client != null">Cliente</th>
+                    <th *ngIf="orderInput.reserve">Reserva</th>
+                    <th *ngIf=" orderInput.cost != undefined && orderInput.cost > 0">Costo</th>
                 </tr>
                 <tr>
-                    <td>Carmen</td>
-                    <td>Completo</td>
+                    <td *ngIf="orderInput.client != null">{{ orderInput.client }}</td>
+                    <td *ngIf="orderInput.reserve">${{ orderInput.amountReserve }}</td>
+                    <td *ngIf=" orderInput.cost != undefined && orderInput.cost > 0">${{ orderInput.cost }}</td>
                 </tr>
             </table>
 

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlback:'http://localhost:3000'
+  urlback:'http://localhost:3000/'
 };
 
 /*

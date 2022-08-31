@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Status } from 'src/app/resources/models/statusEnum';
 
 @Component({
   selector: 'do-status',
@@ -8,8 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class StatusComponent implements OnInit {
 
 
-  @Input() set status (status: string) {
-    this.status_value = status;
+  @Input() set status (status: Status| undefined) {
+    this.status_value = status!;
   }
 
   status_value:string = '';

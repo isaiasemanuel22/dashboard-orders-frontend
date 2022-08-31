@@ -1,5 +1,5 @@
 <div class="navbar">
     <do-button-nav class="navButton" *ngFor="let nav of navigation">
-        <fa-icon [icon]="nav.icon"></fa-icon>
+        <fa-icon [icon]="nav.icon" (click)="navigate(nav.path)"></fa-icon>
     </do-button-nav>
 </div>

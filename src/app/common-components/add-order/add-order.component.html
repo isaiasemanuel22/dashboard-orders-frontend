@@ -1,0 +1,19 @@
+<div class="add-order">
+    <div class="header-form">
+        <div class="title">
+            <h3>Agregar Orden</h3>
+        </div>
+    </div>
+    <div class="form">
+        <form [formGroup]="orderFg" style="display:flex; align-items:center; flex-flow: column; ">
+            <do-input-text [formGroup]="orderFg" formName="name" label="Nombre de orden:"></do-input-text>
+            <do-input-text [formGroup]="orderFg" formName="client" label="Nombre del cliente:"></do-input-text>
+            <do-input-date [formGroup]="orderFg" formName="dateDelivery" label="Fecha de entrega"></do-input-date>
+            <do-input-number [formGroup]="orderFg" formName="cost" label="Costo de orden"></do-input-number>
+            <do-input-checkbox [formGroup]="orderFg" formName="reserve" label="Reserva"></do-input-checkbox>
+            <do-input-number [formGroup]="orderFg" formName="amountReserve" label="Cantidad de reserva"></do-input-number>
+            <do-input-textarea [formGroup]="orderFg" formName="description" label="Descripcion del pedido"></do-input-textarea>
+            <do-button (btnClick)="save()">Guardar Orden</do-button>
+        </form>
+    </div>
+</div>

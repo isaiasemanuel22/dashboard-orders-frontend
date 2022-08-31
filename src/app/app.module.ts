@@ -7,14 +7,16 @@ import { CommonComponentsModule } from './common-components/common-components.mo
 import { HomeComponent } from './views/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutModule } from './layout/layout.module';
-import { ButtonsModule } from './buttons/buttons.module';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { OrdersService } from './resources/orders.service';
+import { AddOrderComponent } from './views/add-order/add-order.component';
+import { ODButtonsModule } from './buttons/buttons.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AddOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +24,8 @@ import { OrdersService } from './resources/orders.service';
     CommonComponentsModule,
     FontAwesomeModule,
     LayoutModule,
-    ButtonsModule,
     HttpClientModule,
+    ODButtonsModule
   ],
   providers: [OrdersService],
   bootstrap: [AppComponent]

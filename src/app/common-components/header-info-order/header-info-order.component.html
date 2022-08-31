@@ -1,15 +1,15 @@
 <div class="header-card">
     <div class="title-card">
         <div class="title">
-            <p>QH29</p>
+            <p>#{{ orderInput.id }} {{ name }}</p>
         </div>
         <div class="dates">
-            <p> 22 AGO 22
-                <fa-icon [icon]="icon"></fa-icon> 3 SEP 22</p>
+            <p> {{ orderAdmission }}
+                <fa-icon [icon]="icon"></fa-icon>{{ orderDelivery }}</p>
         </div>
     </div>
 
-    <do-status></do-status>
+    <do-status [status]="orderInput.status"></do-status>
 
     <div class="button-detail">
         <fa-icon [icon]="angle"></fa-icon>

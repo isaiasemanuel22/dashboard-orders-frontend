@@ -4,22 +4,23 @@ import { ButtonNavComponent } from './button-nav/button-nav.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { CommonComponentsModule } from '../common-components/common-components.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-
-
+import { ButtonComponent } from './button/button.component';
+import { CardsModule } from '../cards/cards.module';
 @NgModule({
   declarations: [
     ButtonNavComponent,
-    AddCardComponent
+    AddCardComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule,
-    CommonComponentsModule,
-    FontAwesomeModule
+    FontAwesomeModule, 
+    CardsModule
   ],
   exports: [
     ButtonNavComponent,
-    AddCardComponent
+    AddCardComponent,
+    ButtonComponent
   ]
 })
-export class ButtonsModule { }
+export class ODButtonsModule { }

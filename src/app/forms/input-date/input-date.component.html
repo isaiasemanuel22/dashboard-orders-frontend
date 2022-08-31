@@ -1,0 +1,8 @@
+<!--div class="input-date">
+    <input type="date"  id="">
+</-div-->
+
+<div class="form-date" [formGroup]="fgInput">
+    <label class="label">{{ labelInput }}</label>
+    <input class="form-date__input" type="date" [formControlName]="nameInput">
+</div>
